@@ -7,7 +7,7 @@
 ## Requirements
 ### Environment
 * GitHub account
-* Java 11 (JDK) (optionally)
+* Java 17 (JDK) (optionally)
 * Maven 3.6+ (optionally)
 * Any IDE you comfortable with (eg. IntelliJ, VSCode)
 

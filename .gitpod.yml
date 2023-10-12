@@ -1,3 +1,5 @@
+image: gitpod/workspace-java-17
+
 vscode:
   extensions:
     - alexkrechik.cucumberautocomplete

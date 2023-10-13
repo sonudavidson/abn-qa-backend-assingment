@@ -14,6 +14,7 @@ public class SampleUnitTest {
     @Test
     @DisplayName("TC1: Sample test case")
     void sampleTestMethod() {
+        System.out.println("soluution is done");
         assertTrue(true);
     }
 }

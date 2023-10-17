@@ -28,7 +28,7 @@ Fork this project
 #### Working in Web IDE (preferable)
 
 1. Open Project in [GitPod](https://gitpod.io/from-referrer/):
-2. Sing-in with GitHub account
+2. Sign-in with GitHub account
 3. Create and commit your solution into your forked repository
 4. Create documentation in the README.md under the `Documentation` section
 5. IMPORTANT: Enable Repository permissions (e.g. git push) for GitPod when coding from Web IDE here:

@@ -43,6 +43,7 @@ public class RestAPI {
                         keys.forEach(key -> ((FilterableRequestSpecification) this.request).removeQueryParam(key));
                     }
                 }
+                this.request.auth().basic(Constants.LOGINUSERNAME, Constants.LOGINPASSWORD);
                 response = request.when().queryParams(queryParams).get(this._path);
             }
         } catch (Exception e) {
@@ -54,6 +55,7 @@ public class RestAPI {
 
     public void delete(String path) {
         try {
+            request.auth().basic(Constants.LOGINUSERNAME, Constants.LOGINPASSWORD);
             response = request.when().delete(path);
         } finally {
             printResponseInfo();
@@ -76,6 +78,8 @@ public class RestAPI {
             request.accept("*/*");
             request.contentType("application/json");
 
+            this.request.auth().basic(Constants.LOGINUSERNAME, Constants.LOGINPASSWORD);
+            
             switch (requestType.toLowerCase()) {
                 case "post":
                     response = request.with().body(serializedRequest).when().post(this._path);
